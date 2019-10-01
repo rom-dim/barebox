@@ -37,7 +37,7 @@ static inline struct da9062_gpio *to_da9062(struct gpio_chip *chip)
 static int gpio_da9062_reg_update(struct da9062_gpio *priv, unsigned int reg,
 				  uint8_t mask, uint8_t val)
 {
-	struct i2c_client *client;
+	struct i2c_client *client = NULL;
 	uint8_t tmp;
 	int ret;
 
