@@ -13,6 +13,10 @@ config GPIO_DIGIC
 	bool "GPIO support for Canon DIGIC"
 	depends on ARCH_DIGIC
 
+config GPIO_DA9062
+	bool "GPIO support for DA9062 MFD"
+	depends on MFD_DA9063
+
 config GPIO_74164
 	bool "Generic SPI attached shift register"
 	depends on SPI
