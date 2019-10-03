@@ -4,7 +4,7 @@
 #include "imx6ul-myir-mys6ul.dtsi"
 
 / {
-	model = "MYS-6ULX-IND Single Board Computer";
+	model = "mys-6ulx-ind";
 	compatible = "myir,imx6ul-mys6ul", "fsl,imx6ul";
 };
 
