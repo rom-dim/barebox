@@ -1,0 +1,29 @@
+/dts-v1/;
+
+#include <arm/imx6ul.dtsi>
+#include "imx6ul-myir-mys6ul.dtsi"
+
+/ {
+	model = "MYS-6ULX-IND Single Board Computer";
+	compatible = "myir,imx6ul-mys6ul", "fsl,imx6ul";
+};
+
+&fec1 {
+	status = "okay";
+};
+
+&gpmi {
+	status = "okay";
+};
+
+&i2c1 {
+	status = "okay";
+};
+
+&uart1 {
+	status = "okay";
+};
+
+&usdhc1 {
+	status = "okay";
+};
