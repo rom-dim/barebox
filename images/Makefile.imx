@@ -341,6 +341,11 @@ CFG_start_imx6q_nitrogen6x_1g.pblb.imximg = $(board)/boundarydevices-nitrogen6/f
 FILE_barebox-boundarydevices-imx6q-nitrogen6x-1g.img = start_imx6q_nitrogen6x_1g.pblb.imximg
 image-$(CONFIG_MACH_NITROGEN6) += barebox-boundarydevices-imx6q-nitrogen6x-1g.img
 
+pblx-$(CONFIG_MACH_MYIR_MYS6UL) += start_imx6ul_myir_mys6ul
+CFG_start_imx6ul_myir_mys6ul.pblx.imximg = $(board)/myir-mys6ul/flash-header-imx6ul-myir-mys6ul.imxcfg
+FILE_barebox-imx6ul-myir-mys6ul.img = start_imx6ul_myir_mys6ul.pblx.imximg
+image-$(CONFIG_MACH_MYIR_MYS6UL) += barebox-imx6ul-myir-mys6ul.img
+
 pblb-$(CONFIG_MACH_NITROGEN6) += start_imx6q_nitrogen6x_2g
 CFG_start_imx6q_nitrogen6x_2g.pblb.imximg = $(board)/boundarydevices-nitrogen6/flash-header-nitrogen6q-2g.imxcfg
 FILE_barebox-boundarydevices-imx6q-nitrogen6x-2g.img = start_imx6q_nitrogen6x_2g.pblb.imximg
