@@ -71,16 +71,11 @@
 	};
 };
 
-&i2c1 {
+&i2c2 {
 	pinctrl-names = "default";
-	pinctrl-0 =<&pinctrl_i2c1>;
+	pinctrl-0 =<&pinctrl_i2c2>;
 	clock-frequency = <100000>;
 	status = "disabled";
-
-	eeprom@52 {
-		compatible = "cat,24c32";
-		reg = <0x52>;
-	};
 };
 
 &uart1 {
@@ -163,10 +158,10 @@
 			>;
 		};
 
-		pinctrl_i2c1: i2cgrp {
+		pinctrl_i2c2: i2cgrp {
 			fsl,pins = <
-				MX6UL_PAD_UART4_TX_DATA__I2C1_SCL	0x4001b8b0
-				MX6UL_PAD_UART4_RX_DATA__I2C1_SDA	0x4001b8b0
+				MX6UL_PAD_UART5_TX_DATA__I2C2_SCL	0x4001b8b0
+				MX6UL_PAD_UART5_RX_DATA__I2C2_SDA	0x4001b8b0
 			>;
 		};
 

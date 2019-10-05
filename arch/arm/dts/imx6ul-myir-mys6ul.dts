@@ -16,7 +16,7 @@
 	status = "okay";
 };
 
-&i2c1 {
+&i2c2 {
 	status = "okay";
 };
 
